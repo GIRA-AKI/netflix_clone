@@ -15,6 +15,8 @@ const Input:React.FC<InputProps> = ({
     label,
     type
 }) =>{
+
+
     return (
         <div className="relative">
 
