@@ -1,6 +1,7 @@
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { promises as fs } from 'fs';
 import Navbar from "./components/Navbar";import { BsFillPlayFill } from 'react-icons/bs';
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, AwaitedReactNode } from 'react';
  "./components/Navbar"
 
 
@@ -106,7 +107,7 @@ export default async function page(){
               </p>
               <div className="grid grid-cols-4 gap-2">
                 {
-                  data.map((d) => (
+                  data.map((d: { thumbnailUrl: string | undefined; duration: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<AwaitedReactNode> | null | undefined; genre: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<AwaitedReactNode> | null | undefined; }) => (
           
                 
                 <div className="group bg-zinc-900 col-span relative h-[12vw]">
